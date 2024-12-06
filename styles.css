@@ -22,6 +22,9 @@ body::before {
 }
 
 #app {
+    margin-top: 30px;
+}
+#welcome-screen{
     margin-top: 100px;
 }
 
@@ -38,23 +41,66 @@ button {
     border: none;
     border-radius: 5px;
     margin: 10px;
+    min-width: 320px;
+    min-height: 20px;
 }
 
 button:hover {
     background-color: #828282;
 }
 
+#start-test.button_by {
+    padding: 10px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    background-color: #b08d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    min-width: 10px; /* Ширина кнопки */
+    min-height: 30px; /* Высота кнопки */
+}
+#start-test.button_by:hover{
+    background-color: #828282;
+}
+
+#restart-test.button_by {
+    padding: 10px 30px;
+    font-size: 17px;
+    cursor: pointer;
+    background-color: #b08d4d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 15px;
+    min-width: 10px; /* Ширина кнопки */
+    min-height: 30px; /* Высота кнопки */
+}
+
+#restart-test.button_by:hover{
+    background-color: #828282;
+}
+
+
+
 #name-options {
     margin: 20px;
+    display: flex;
+    flex-direction: column; /* Выстраиваем кнопки вертикально */
+    align-items: center; /* Центрируем кнопки */
 }
 
 #name-options button {
     display: block;
-    margin: 10px auto;
-    width: 200px;
+    margin: 7px 0; /* Расстояние между кнопками */
+    width: 100%; /* Ширина кнопок адаптируется к родительскому элементу */
+    max-width: 300px; /* Максимальная ширина кнопок */
+    min-height: 40px; /* Минимальная высота кнопки */
+    word-wrap: break-word; /* Разрывает длинные слова */
+    text-align: center; /* Центрируем текст внутри кнопок */
 }
 
-/* Стили для картинки */
 #employee-photo {
     width: 320px; /* Ширина изображения */
     height: 320px; /* Высота изображения */
@@ -63,7 +109,9 @@ button:hover {
     border: 5px solid #ccc; /* Обводка */
     margin: 20px auto; /* Центровка */
     display: block; /* Блоковый элемент для центрирования */
+    max-width: 100%; /* Картинка будет адаптироваться к размеру экрана */
 }
+
 
 
 #result-screen {
@@ -82,6 +130,76 @@ button:hover {
     margin-top: 20px;
 }
 
+.split-button {
+    width: 100px;
+    height: 50px; /* Увеличена высота для двух частей */
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    display: block;
+    background: none;
+    position: relative;
+    border-radius: 10px; /* Добавляем закругления для всей кнопки */
+    overflow: hidden; /* Чтобы дочерние элементы не выходили за пределы кнопки */
+}
+
+.split-button .top,
+.split-button .bottom {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    left: 0;
+}
+
+.split-button .top {
+    top: 0;
+    background-color: #b08d4d; /* Карамельный цвет */
+    color: white;
+    border-bottom: 1px solid white; /* Линия между частями */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.split-button .bottom {
+    bottom: 0;
+    background-color: #cfbc8b; /* Серый фон для должности */
+    color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+.split-button div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+}
+
+.screen.hidden {
+    display: none;
+}
+
+
+
+#timer {
+    position: fixed;
+    top: 10px;
+    right: 30px;
+    font-size: 1.5em;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+#result-screen{
+    margin-top: 100px;
+}
 .images__com{
     margin-bottom: 40px;
 }

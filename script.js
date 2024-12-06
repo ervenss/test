@@ -1,33 +1,82 @@
 const employees = [
-    { name: "Максим", gender: "male", photo: "photos/maxim.jpg" },
-    { name: "Света", gender: "female", photo: "photos/sveta.jpg" },
-    { name: "Шариф", gender: "male", photo: "photos/charif.jpg" },
-    { name: "Михаил", gender: "male", photo: "photos/mixail.jpg" },
-    { name: "Антон Петряев", gender: "male", photo: "photos/antoxa.jpg" },
-    { name: "Иван", gender: "male", photo: "photos/ivan.jpg" },
-    { name: "Эдуард", gender: "male", photo: "photos/idyard.jpg" },
-    { name: "Кирилл", gender: "male", photo: "photos/kirill.jpg" },
-    { name: "Александр Калинин", gender: "male", photo: "photos/sasha.jpg" },
-    { name: "Дмитрий", gender: "male", photo: "photos/dima.jpg" },
-    { name: "Медведь", gender: "male", photo: "photos/medved.jpg" },
-    { name: "Кристина", gender: "female", photo: "photos/kris.jpg" },
-    { name: "Евгений", gender: "male", photo: "photos/jeka.jpg" },
-    // Добавьте больше сотрудников
+    { name: "Антонов Максим Дмитриевич (Директор по развитию)", gender: "male", photo: "photos/maxim.jpg" },
+    { name: "Полынцева Светлана Валерьевна (Директор по продажам)", gender: "female", photo: "photos/sveta.jpg" },
+    { name: "Одинаев Шариф Худжамуродович (Учредитель)", gender: "male", photo: "photos/charif.jpg" },
+    { name: "Смирнов Михаил Олегович (Маркетолог)", gender: "male", photo: "photos/mixail.jpg" },
+    { name: "Петряев Антон Павлович (Руководитель frontend разработки)", gender: "male", photo: "photos/antoxa.jpg" },
+    { name: "Мельников Иван Александрович (Директор по персоналу)", gender: "male", photo: "photos/ivan.jpg" },
+    { name: "Миллер Эдуард Яковлевич (HR)", gender: "male", photo: "photos/idyard.jpg" },
+    { name: "Гряник Кирилл Денисович (Дизайнер)", gender: "male", photo: "photos/kirill.jpg" },
+    { name: "Калинин Александр Владимирович (Менеджер по документообороту)", gender: "male", photo: "photos/sasha.jpg" },
+    { name: "Хоменко Дмитрий Витальевич (Менеджер В2В продаж)", gender: "male", photo: "photos/dima.jpg" },
+    { name: "Зангиев Сосланбек Дмитриевич (Генеральный директор)", gender: "male", photo: "photos/medved.jpg" },
+    { name: "Баширова Кристина Руслановна (Переводчик, контент-менеджер)", gender: "female", photo: "photos/kris.jpg" },
+    { name: "Кудрявцев Евгений Сергеевич (Руководитель отдела разработки)", gender: "male", photo: "photos/jeka.jpg" },
+    { name: "Ечменица Младен (МОП)", gender: "male", photo: "photos/mladen.jpg" },
+    { name: "Горбатененко Арсений Кириллович (МОП)", gender: "male", photo: "photos/arseni.png" },
+    { name: "Трухачев Иван Федорович (МОП)", gender: "male", photo: "photos/tryxachev.png" },
+
+
+    { name: "Садигзаде Хикмет Асамаддин Оглы (Разработчик frontend)", gender: "male", photo: "photos/hicmet.png" },
+    { name: "Гаршин Даниил Викторович (Разработчик backend)", gender: "male", photo: "photos/garhin.jpg" },
+    { name: "Мягков Алексей Сергеевич  (Разработчик backend)", gender: "male", photo: "photos/skuf.jpg" },
+    { name: "Митяшин Игорь Валерьевич  (Разработчик backend)", gender: "male", photo: "photos/igar.jpg" },
+    { name: "Кругликов Вячеслав Артемович (Разработчик frontend)", gender: "male", photo: "photos/slava.jpg" },
+    { name: "Волошин Максим Вадимович (Разработчик frontend)", gender: "male", photo: "photos/maxim3.jpg" },
+    { name: "Турнов Анатолий Фёдорович (Стажер backend)", gender: "male", photo: "photos/tola.jpg" },
+
+
+
+    { name: "Курилко Кирилл Иванович (Помощник)", gender: "male", photo: "photos/kir.jpg" },
+
+
+
+
+    { name: "Саид Азим Сара (МОП)", gender: "female", photo: "photos/sara.jpg" },
+    { name: "Упорова Виктория Николаевна (МОП)", gender: "female", photo: "photos/vika.jpg" },
+    { name: "Матвеева Снежана Алексеевна (МОП)", gender: "female", photo: "photos/snejana.jpg" },
+    { name: "Кузьмина Ксения Дмитриевна (МОП)", gender: "female", photo: "photos/ksenia.jpg" },
+    { name: "Павлова Ирина Сергеевна (МОП)", gender: "female", photo: "photos/ira.png" },
+
+    { name: "Авакян Диана Андраниковна (Аналитик)", gender: "female", photo: "photos/diana.jpg" },
+    { name: "Акимова Анастасия Павловна (Специалист ОКК)", gender: "female", photo: "photos/nastya.jpg" },
+    { name: "Попова Алина Анатольевна (Супервайзер)", gender: "female", photo: "photos/alina.jpg" },
+
+
+
+
+    { name: "Милованов Александр Сергеевич (МОП)", gender: "male", photo: "photos/alexander.jpg" },
+    { name: "Зайчиков Егор Евгеньевич (МОП)", gender: "male", photo: "photos/egor.jpg" },
+    { name: "Федорук Даниил Григорьевич (МОП)", gender: "male", photo: "photos/fedoruc.jpg" },
+    { name: "Серебренников Михаил Сергеевич (Офис-менеджер)", gender: "male", photo: "photos/mixail2.png" },
+    { name: "Ярыгин Никита Александрович (Проджект менеджер)", gender: "male", photo: "photos/nikita.jpg" },
+
+
+
+
+
+
+
+    { name: "Янцен Максим (МОП)", gender: "male", photo: "photos/maxim2.jpg" },
+    { name: "Звонов Дмитрий Анатольевич (МОП)", gender: "male", photo: "photos/zvonov.jpg" }
 ];
 
 let shuffledEmployees = [];
 let currentStep = 0;
 let correctAnswers = 0;
-let incorrectAnswers = []; // Храним неправильные ответы
-
-const sadSoundPath = "audio/sad_violin.mp3"; // Путь к грустному звуку
-const victorySoundPath = "audio/pobeda.mp3"; // Путь к звуку победы
-const victoryImagePath = "images/mini.gif"; // Путь к картинке победы
-const defeatImagePath = "images/minions.gif"; // Путь к картинке проигрыша
+let incorrectAnswers = [];
+const sadSoundPath = "audio/sad_violin.mp3";
+const victorySoundPath = "audio/pobeda.mp3";
+const victoryImagePath = "images/mini.gif";
+const defeatImagePath = "images/minions.gif";
 
 let sadAudio = null;
 let victoryAudio = null;
-let audioTimeout = null; // Таймер для ограничения звука
+let audioTimeout = null;
+
+let timerInterval = null;
+let startTime = 0;
+let timerElement = null;
 
 document.getElementById("start-test").addEventListener("click", startTest);
 document.getElementById("restart-test").addEventListener("click", restartTest);
@@ -38,8 +87,40 @@ function startTest() {
     currentStep = 0;
     correctAnswers = 0;
     incorrectAnswers = [];
-    shuffledEmployees = shuffleArray([...employees]); // Перемешиваем массив
+    shuffledEmployees = shuffleArray([...employees]);
+
+    // Создаем таймер и сразу показываем его
+    startTimer(); // Таймер сразу начинает отсчет
     renderStep();
+}
+
+function startTimer() {
+    // Если таймер еще не создан, создаем его
+    if (!timerElement) {
+        timerElement = document.createElement("div");
+        timerElement.style.position = "fixed";
+        timerElement.style.top = "20px";
+        timerElement.style.right = "20px";
+        timerElement.style.color = "black"; // Черный цвет для цифр
+        timerElement.style.fontFamily = "Arial, sans-serif";
+        timerElement.style.fontSize = "22px";
+        timerElement.textContent = "00:00"; // Устанавливаем начальное значение
+        document.body.appendChild(timerElement);
+    }
+
+    startTime = Date.now(); // Сохраняем текущее время
+
+    timerInterval = setInterval(() => {
+        const elapsedTime = Math.floor((Date.now() - startTime) / 1000);
+        const minutes = Math.floor(elapsedTime / 60);
+        const seconds = elapsedTime % 60;
+        timerElement.textContent = `${String(minutes).padStart(2, '0')}:${String(seconds).padStart(2, '0')}`; // Форматирование таймера
+    }, 1000);
+}
+
+function stopTimer() {
+    clearInterval(timerInterval);
+    timerInterval = null;
 }
 
 function renderStep() {
@@ -58,41 +139,44 @@ function renderStep() {
 
     options.forEach(option => {
         const button = document.createElement("button");
-        button.textContent = option;
+        button.classList.add("split-button");
+
+        const [name, position] = option.split(" (");
+        const bottomText = position ? position.replace(")", "") : "";
+
+        const topDiv = document.createElement("div");
+        topDiv.classList.add("top");
+        topDiv.textContent = name;
+
+        const bottomDiv = document.createElement("div");
+        bottomDiv.classList.add("bottom");
+        bottomDiv.textContent = bottomText;
+
+        button.appendChild(topDiv);
+        button.appendChild(bottomDiv);
+
         button.addEventListener("click", () => handleAnswer(option === employee.name));
         nameOptionsDiv.appendChild(button);
     });
 }
 
 function generateOptions(employee) {
-    // Берем все имена сотрудников того же пола, кроме текущего
-    const genderNames = employees
-        .filter(e => e.gender === employee.gender && e.name !== employee.name)
+    const names = employees
+        .filter(e => e.name !== employee.name && e.gender === employee.gender) // Фильтруем по полу
         .map(e => e.name);
 
-    // Убираем дубликаты и перемешиваем
-    const uniqueNames = [...new Set(genderNames)];
-    const shuffled = shuffleArray(uniqueNames);
-
-    // Если уникальных имен недостаточно, добавляем фиктивные
-    while (shuffled.length < 5) {
-        shuffled.push(`Имя${shuffled.length + 1}`);
+    // Увеличиваем количество вариантов до 5
+    while (names.length < 5) {
+        names.push(`Имя ${names.length + 1}`);
     }
 
-    // Берем 5 случайных имен и добавляем правильный вариант
-    const options = shuffled.slice(0, 5);
-    options.push(employee.name); // Добавляем правильное имя
-
-    // Перемешиваем все варианты
-    return shuffleArray(options);
+    return shuffleArray([...names.slice(0, 5), employee.name]);
 }
 
 function handleAnswer(isCorrect) {
-    if (!isCorrect) {
-        incorrectAnswers.push(shuffledEmployees[currentStep]); // Запоминаем неправильный ответ
-    } else {
-        correctAnswers++;
-    }
+    if (isCorrect) correctAnswers++;
+    else incorrectAnswers.push(shuffledEmployees[currentStep]);
+
     currentStep++;
     renderStep();
 }
@@ -103,19 +187,18 @@ function showResults() {
     document.getElementById("result-text").textContent = `Вы ответили правильно ${correctAnswers} раз(а) из ${employees.length}.`;
 
     const resultImage = document.getElementById("result-image");
-
-    // Если есть неправильные ответы, проигрываем грустный звук
     if (incorrectAnswers.length > 0) {
         playSadSound();
-        resultImage.src = defeatImagePath; // Показываем картинку проигрыша
+        resultImage.src = defeatImagePath;
     } else {
         playVictorySound();
-        resultImage.src = victoryImagePath; // Показываем картинку победы
+        resultImage.src = victoryImagePath;
     }
+
+    stopTimer(); // Останавливаем таймер после окончания теста
 }
 
 function playSadSound() {
-    // Останавливаем предыдущий звук, если он еще играет
     if (sadAudio) {
         sadAudio.pause();
         sadAudio.currentTime = 0;
@@ -123,11 +206,10 @@ function playSadSound() {
 
     sadAudio = new Audio(sadSoundPath);
     sadAudio.play();
-    audioTimeout = setTimeout(() => sadAudio.pause(), 5000); // Остановка через 7 секунд
+    audioTimeout = setTimeout(() => sadAudio.pause(), 5000);
 }
 
 function playVictorySound() {
-    // Останавливаем предыдущий звук, если он еще играет
     if (victoryAudio) {
         victoryAudio.pause();
         victoryAudio.currentTime = 0;
@@ -138,27 +220,9 @@ function playVictorySound() {
 }
 
 function restartTest() {
-    document.getElementById("result-screen").classList.add("hidden");
-    document.getElementById("welcome-screen").classList.remove("hidden");
-
-    // Останавливаем все звуки, если они играют
-    if (sadAudio) {
-        sadAudio.pause();
-        sadAudio.currentTime = 0;
-    }
-
-    if (victoryAudio) {
-        victoryAudio.pause();
-        victoryAudio.currentTime = 0;
-    }
-
-    // Очищаем таймер для звуков
-    if (audioTimeout) {
-        clearTimeout(audioTimeout);
-    }
+    location.reload();
 }
 
-// Утилита для перемешивания массива
 function shuffleArray(array) {
     return array.sort(() => Math.random() - 0.5);
 }
