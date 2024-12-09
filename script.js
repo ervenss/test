@@ -6,7 +6,7 @@ const employees = [
     { name: "Петряев Антон Павлович (Руководитель frontend разработки)", gender: "male", photo: "photos/antoxa.jpg" },
     { name: "Мельников Иван Александрович (Директор по персоналу)", gender: "male", photo: "photos/ivan.jpg" },
     { name: "Миллер Эдуард Яковлевич (HR)", gender: "male", photo: "photos/idyard.jpg" },
-    { name: "Гряник Кирилл Денисович (Дизайнер)", gender: "male", photo: "photos/kirill.jpg" },
+    { name: "Курилко Кирилл Иванович (Помощник)", gender: "male", photo: "photos/kirill.jpg" },
     { name: "Калинин Александр Владимирович (Менеджер по документообороту)", gender: "male", photo: "photos/sasha.jpg" },
     { name: "Хоменко Дмитрий Витальевич (Менеджер В2В продаж)", gender: "male", photo: "photos/dima.jpg" },
     { name: "Зангиев Сосланбек Дмитриевич (Генеральный директор)", gender: "male", photo: "photos/medved.jpg" },
@@ -27,7 +27,7 @@ const employees = [
 
 
 
-    { name: "Курилко Кирилл Иванович (Помощник)", gender: "male", photo: "photos/kir.jpg" },
+    { name: "Гряник Кирилл Денисович (Дизайнер)", gender: "male", photo: "photos/kir.jpg" },
 
 
 
@@ -41,6 +41,8 @@ const employees = [
     { name: "Авакян Диана Андраниковна (Аналитик)", gender: "female", photo: "photos/diana.jpg" },
     { name: "Акимова Анастасия Павловна (Специалист ОКК)", gender: "female", photo: "photos/nastya.jpg" },
     { name: "Попова Алина Анатольевна (Супервайзер)", gender: "female", photo: "photos/alina.jpg" },
+    { name: "Лукоянова Юлия Юрьевна (Супервайзер)", gender: "female", photo: "photos/ulia.jpg" },
+
 
 
 
